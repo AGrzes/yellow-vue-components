@@ -1,0 +1,63 @@
+{
+  "name": "yellow-vue-components",
+  "version": "1.0.0",
+  "description": "Yellow vue components",
+  "main": "target",
+  "types": "src",
+  "scripts": {
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc mocha test/**/*.{ts,tsx}",
+    "build": "rm -rf target && tsc",
+    "watch": "tsc -w --incremental",
+    "format": "tslint 'src/**/*.ts' --fix",
+    "lint": "tslint 'src/**/*.ts'"
+  },
+  "nyc": {
+    "all": true,
+    "extension": [
+      ".ts",
+      ".tsx"
+    ],
+    "exclude": [
+      "**/*.d.ts"
+    ],
+    "include": [
+      "src/**/*"
+    ],
+    "reporter": [
+      "html",
+      "text",
+      "lcov"
+    ],
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AGrzes/yellow-vue-components.git"
+  },
+  "author": "Grzegorz Abramczyk <abramczykg@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AGrzes/yellow-vue-components/issues"
+  },
+  "homepage": "https://github.com/AGrzes/yellow-vue-components#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.9",
+    "@types/lodash": "^4.14.149",
+    "@types/mocha": "^7.0.1",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.9",
+    "mocha": "^7.0.1",
+    "nyc": "^15.0.0",
+    "ts-node": "^8.6.2",
+    "tslint": "^6.0.0",
+    "typescript": "^3.6.2"
+  }
+}
