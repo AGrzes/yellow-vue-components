@@ -1,6 +1,6 @@
 {
   "name": "@agrzes/yellow-vue-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Yellow vue components",
   "main": "target",
   "types": "src",
@@ -47,11 +47,8 @@
   "homepage": "https://github.com/AGrzes/yellow-vue-components#readme",
   "dependencies": {
     "ace-builds": "^1.4.9",
-    "bootstrap": "^4.4.1",
-    "jquery": "^3.4.1",
     "js-yaml": "^3.13.1",
-    "lodash": "^4.17.15",
-    "vue": "^2.6.11"
+    "lodash": "^4.17.15"
   },
   "devDependencies": {
     "@types/bootstrap": "^4.3.2",
@@ -66,6 +63,14 @@
     "nyc": "^15.0.0",
     "ts-node": "^8.6.2",
     "tslint": "^6.0.0",
-    "typescript": "^3.6.2"
+    "typescript": "^3.6.2",
+    "vue": "^2.6.11",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
+  },
+  "peerDependencies": {
+    "vue": "^2.6.11",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1"
   }
 }
